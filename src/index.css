@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Tus estilos base si quieres mantenerlos */
+body {
+  @apply bg-slate-900 text-white overflow-x-hidden;
+}
