@@ -34,7 +34,7 @@ export default function Slide9({ onNext, onPrev, onHome }) {
     setIsProcessing(true);
     setLogs(["[SISTEMA]: Iniciando proceso..."]);
     try {
-      const response = await fetch('/src/assets/dataset/WA_Fn-UseC_-HR-Employee-Attrition.csv');
+      const response = await fetch('/dataset/WA_Fn-UseC_-HR-Employee-Attrition.csv');
       const csvText = await response.text();
       const results = Papa.parse(csvText, { header: true, dynamicTyping: true });
       let data = results.data.filter(d => d.Age);
