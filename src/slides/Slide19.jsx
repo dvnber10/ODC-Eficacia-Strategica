@@ -8,7 +8,7 @@ export default function Slide19({ onNext, onPrev, onHome }) {
     <motion.div 
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }} 
-      className="max-w-6xl w-full flex flex-col  items-center justify-center text-center relative overflow-hidden"
+      className="max-w-6xl w-full flex flex-col   items-center justify-center text-center relative overflow-hidden"
     >
       {/* EFECTO DE FONDO SUTIL */}
       <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
@@ -28,9 +28,8 @@ export default function Slide19({ onNext, onPrev, onHome }) {
         </h2>
         
         <p className="max-w-full sm:max-w-2xl text-slate-400 text-xs sm:text-sm leading-relaxed mx-auto mb-8 sm:mb-12">
-          Has completado el programa avanzado de Business Analytics en entornos de Big Data. Ahora tienes las herramientas técnicas 
-          y narrativas para transformar cualquier organización mediante el poder de los datos. 
-          El futuro del trabajo no es una suposición, es una ciencia que ahora dominas.
+          Has completado el programa de Business Analytics en entornos de Big Data. Ahora tienes las herramientas técnicas 
+          para transformar cualquier organización mediante el poder de los datos.
         </p>
 
         {/* Agradecimientos y referencias cortas */}
