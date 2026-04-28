@@ -26,31 +26,31 @@ export default function Slide19({ onNext, onPrev, onHome }) {
         <h2 className="text-3xl sm:text-5xl font-black italic text-white mb-4 tracking-tighter">
           ¡GRACIAS POR <span className="text-accent text-glow">REVOLUCIONAR</span> EL TALENTO!
         </h2>
-        
-        <p className="max-w-full sm:max-w-2xl text-slate-400 text-xs sm:text-sm leading-relaxed mx-auto mb-8 sm:mb-12">
-          Has completado el programa de Business Analytics en entornos de Big Data. Ahora tienes las herramientas técnicas 
-          para transformar cualquier organización mediante el poder de los datos.
-        </p>
 
         {/* Agradecimientos y referencias cortas */}
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 max-w-full sm:max-w-4xl mx-auto mb-8 sm:mb-12">
+        <div className="flex flex-col sm:flex-wrap justify-center gap-2 sm:gap-4 max-w-full sm:max-w-4xl mx-auto mb-8 sm:mb-12">
           <div className="px-4 py-2 sm:px-6 sm:py-4 bg-slate-900/40 border border-slate-800 rounded-2xl flex items-center gap-2 sm:gap-3">
             <Users size={18} className="text-accent" />
             <div className="text-left">
-              <p className="text-[10px] sm:text-[9px] font-black uppercase text-slate-500 tracking-widest">Instructores</p>
-              <p className="text-[12px] sm:text-[11px] text-white font-bold">Marcela Devia Barbosa</p>
+              <p className="text-[11px] sm:text-[9px] font-black uppercase text-slate-500 tracking-widest">Instructores</p>
+              <p className="text-[10px] sm:text-[11px] text-white font-bold">Marcela Devia Barbosa</p>
             </div>
           </div>
 
-          <div className="px-4 py-2 sm:px-6 sm:py-4 bg-slate-900/40 border border-slate-800 rounded-2xl flex items-center gap-2 sm:gap-3">
+          <div className="w-full max-w-full px-4 py-2 sm:px-6 sm:py-4 bg-slate-800/40 border border-slate-800 rounded-2xl flex items-start gap-2 sm:gap-3 max-w-xs sm:max-w-none min-w-0">
             <Heart size={18} className="text-red-400" />
-            <div className="text-left">
-              <p className="text-[10px] sm:text-[9px] font-black uppercase text-slate-500 tracking-widest">Referencias</p>
-              <p className="text-[12px] sm:text-[11px] text-white font-bold">CerTIC Certificaciones Internacionales TIC, https://www.youtube.com/watch?v=dHM-kuxz4w4</p>
+            <div className="text-left min-w-0">
+              <p className="text-[11px] sm:text-[9px] font-black uppercase text-slate-500 tracking-widest">Referencias</p>
+              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">1. CerTIC. (s.f.). <em>Certificaciones Internacionales TIC</em>. https://www.youtube.com/watch?v=dHM-kuxz4w4</p>
+              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">2. IBM. (s.f.). <em>¿Qué es la procedencia de los datos?</em> Recuperado de https://www.ibm.com/mx-es/think/topics/data-provenance</p>
+              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">3. The Bridge. (s.f.). <em>Diferencias entre datos estructurados, no estructurados y semiestructurados</em>. Recuperado de https://thebridge.tech/blog/diferencias-entre-datos-estructurados-no-estructurados-y-semiestructurados/</p>
+              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">4. Mustafa Cagri. (s.f.). <em>Analítica de datos</em>. Mecalux. Recuperado de https://www.mecalux.com.ar/articulos-de-logistica/mustafa-cagri-analitica-datos-wms</p>
+              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">5. Ramírez, S. (s.f.). <em>Big Data: Preprocesamiento y calidad de datos</em>. Recuperado de http://150.214.190.154/sites/default/files/ficherosPublicaciones/2133_Nv237-Digital-sramirez.pdf</p>
+              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">6. Vincula Tégica. (s.f.). <em>La analítica de datos como ventaja competitiva en las organizaciones</em>. Recuperado de https://vinculategica.uanl.mx/index.php/v/article/view/520</p>
+              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">7. Anónimo. (s.f.). <em>Decisiones empresariales mediante la analítica de datos</em>. Recuperado de https://hdl.handle.net/1992/74868</p>
+              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">8. Recursos y estrategias para la enseñanza de la estadística y la analítica de datos. Recuperado de https://www.scielo.cl/scielo.php?pid=S0718-50062022000300061&script=sci_arttext</p>
             </div>
-          </div>
-
-          
+          </div>     
         </div>
       </motion.div>
 

@@ -119,7 +119,7 @@ export default function App() {
     },
     19: {
       bubble: "Gracias por seguir este curso. Muchos exitos",
-      audio: audioS18
+      audio: audioS19
     },
     
   };
