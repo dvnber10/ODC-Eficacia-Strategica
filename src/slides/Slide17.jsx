@@ -48,39 +48,39 @@ export default function Slide17({ onNext, onPrev, onHome }) {
     };
 
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-6xl w-full flex flex-col h-[82vh] overflow-hidden">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-6xl w-full flex flex-col h-[82vh] float-left overflow-hidden">
 
             <div className="text-center mb-4">
                 <h2 className="text-2xl font-bold italic">El Arte del <span className="text-purple-400">Storytelling</span></h2>
                 <p className="text-slate-400 text-[10px]">Convence a la junta con tus hallazgos de TechNova.</p>
             </div>
 
-            <div className="grid lg:grid-cols-12 gap-4 flex-1 min-h-0 mb-16">
+            <div className="md:grid-cols-12 gap-4 flex-1 min-h-0 mb-16  overflow-y-auto md:grid">
 
                 {/* ÁREA DE SIMULACIÓN */}
-                <div className="lg:col-span-8 flex flex-col min-h-0">
+                <div className="md:col-span-8 flex flex-col min-h-0 ">
                     <AnimatePresence mode="wait">
                         {step < 3 ? (
                             <motion.div
                                 key={step}
                                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
-                                className="bg-slate-900/60 border border-slate-700 rounded-[32px] p-5 flex-1 flex flex-col justify-center"
+                                className="bg-slate-900/60 border border-slate-700 rounded-[32px] p-5 flex-1 flex flex-col justify-center  custom-scrollbar min-h-[400px] sm:min-h-[300px]"
                             >
-                                <div className="flex items-center gap-2 mb-2">
+                                <div className="flex items-center gap-2 mb-2 text-center justify-center h-10">
                                     <TrendingUp size={14} className="text-purple-400" />
                                     <span className="text-[9px] font-black text-purple-400 uppercase tracking-widest">Fase de Presentación</span>
                                 </div>
-                                <h3 className="text-xl font-bold mb-4 text-white">{pitches[step].title}</h3>
+                                <h3 className="text-lg sm:text-xl font-bold mb-4 text-white">{pitches[step].title}</h3>
 
                                 {/* GRID DE 2 COLUMNAS PARA OPCIONES */}
-                                <div className="grid grid-cols-2 gap-3">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3  min-h-[200px] custom-scrollbar pr-1">
                                     {pitches[step].options.map((opt, i) => (
                                         <button
                                             key={i}
                                             onClick={() => handleChoice(opt.score)}
-                                            className="p-3 bg-slate-800/50 hover:bg-purple-500/10 border border-slate-700 hover:border-purple-500/50 rounded-2xl text-left transition-all group flex items-center justify-between"
+                                            className="p-4 sm:p-3 bg-slate-800/50 hover:bg-purple-500/10 border border-slate-700 hover:border-purple-500/50 rounded-2xl text-left transition-all group flex items-center justify-between"
                                         >
-                                            <span className="text-[11px] text-slate-300 group-hover:text-white leading-tight">{opt.text}</span>
+                                            <span className="text-sm sm:text-[11px] text-slate-300 group-hover:text-white leading-tight">{opt.text}</span>
                                             <ChevronRight className="text-slate-600 group-hover:text-purple-400 shrink-0" size={14} />
                                         </button>
                                     ))}
@@ -89,7 +89,7 @@ export default function Slide17({ onNext, onPrev, onHome }) {
                         ) : (
                             <motion.div
                                 initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-                                className="bg-gradient-to-br from-purple-900/20 to-slate-900 border border-purple-500/30 rounded-[32px] p-6 text-center flex flex-col items-center justify-center h-full"
+                                className="bg-gradient-to-br from-purple-900/20 to-slate-900 border border-purple-500/30 rounded-[32px] p-6 text-center flex flex-col items-center justify-center gap-4"
                             >
                                 <Award className="text-yellow-400 mb-3" size={48} />
                                 <h3 className="text-2xl font-black mb-2">¡Pitch Completado!</h3>
@@ -101,7 +101,7 @@ export default function Slide17({ onNext, onPrev, onHome }) {
                 </div>
 
                 {/* PANEL LATERAL COMPACTO */}
-                <div className="lg:col-span-4 flex flex-col gap-4">
+                <div className="md:col-span-4 flex flex-col gap-4">
                     <div className="bg-slate-800 border border-slate-700 rounded-[32px] p-5 flex-1 flex flex-col justify-center items-center">
                         <h4 className="text-[9px] font-black uppercase text-slate-500 mb-4 tracking-widest">Impacto en la Junta</h4>
 

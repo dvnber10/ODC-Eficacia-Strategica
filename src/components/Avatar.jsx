@@ -61,7 +61,7 @@ const Avatar = ({ message, audioFile }) => {
     <motion.div
       drag
       dragConstraints={{ left: -1000, right: 0, top: -500, bottom: 0 }}
-      className="fixed bottom-10 right-10 flex items-end gap-4 z-50 pointer-events-auto cursor-grab"
+      className="fixed bottom-4 right-4 sm:bottom-10 sm:right-10 flex items-end gap-3 sm:gap-4 z-50 pointer-events-auto cursor-grab"
     >
       <div className="flex flex-col items-center gap-2">
         <AnimatePresence mode="wait">
@@ -70,9 +70,9 @@ const Avatar = ({ message, audioFile }) => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            className="bg-white text-slate-900 p-4 rounded-2xl rounded-br-none shadow-2xl max-w-[200px] border-2 border-secondary relative select-none"
+            className="bg-white text-slate-900 p-2 sm:p-4 rounded-2xl rounded-br-none shadow-2xl max-w-[150px] sm:max-w-[200px] border-2 border-secondary relative select-none"
           >
-            <p className="text-xs font-bold italic leading-tight">{message}</p>
+            <p className="text-[10px] sm:text-xs font-bold italic leading-tight">{message}</p>
             <div className="absolute -bottom-2 right-0 w-4 h-4 bg-white border-r-2 border-b-2 border-secondary transform rotate-45"></div>
           </motion.div>
         </AnimatePresence>
@@ -82,7 +82,7 @@ const Avatar = ({ message, audioFile }) => {
             e.stopPropagation();
             toggleAudio();
           }}
-          className={`flex items-center gap-2 px-4 py-2 text-[10px] font-black uppercase rounded-full transition-all shadow-lg active:scale-90 ${isPlaying
+          className={`flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-2 text-[9px] sm:text-[10px] font-black uppercase rounded-full transition-all shadow-lg active:scale-90 ${isPlaying
               ? 'bg-red-500 text-white'
               : 'bg-secondary text-primary hover:bg-white hover:text-slate-900 border border-secondary'
             }`}
@@ -96,7 +96,7 @@ const Avatar = ({ message, audioFile }) => {
         <motion.div
           animate={isPlaying ? { scale: [1, 1.1, 1], rotate: [0, 2, -2, 0] } : { y: [0, -5, 0] }}
           transition={isPlaying ? { duration: 0.5, repeat: Infinity } : { duration: 4, repeat: Infinity }}
-          className={`w-20 h-20 rounded-full overflow-hidden border-4 shadow-xl bg-slate-800 ${isPlaying ? 'border-accent' : 'border-secondary'
+          className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-4 shadow-xl bg-slate-800 ${isPlaying ? 'border-accent' : 'border-secondary'
             }`}
         >
           <img src={avatarImg} alt="AI" className="w-full h-full object-cover select-none pointer-events-none" />

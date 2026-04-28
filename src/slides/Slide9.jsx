@@ -67,7 +67,7 @@ export default function Slide9({ onNext, onPrev, onHome }) {
 
   return (
     // Incrementamos h-[85vh] a h-[92vh] para ganar esos píxeles hacia abajo
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-7xl w-full flex flex-col h-150 text-slate-200 overflow-hidden pb-4">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-7xl w-full flex flex-col sm:h-150 text-slate-200 overflow-hidden sm:overflow-visible pb-4">
       
       {/* HEADER */}
       <div className="flex gap-4 items-center bg-slate-900/60 p-4 rounded-2xl border border-slate-700  z-50">
@@ -121,7 +121,7 @@ export default function Slide9({ onNext, onPrev, onHome }) {
 
         {/* RESULTADOS Y CONSOLA */}
         <div className="lg:col-span-4 flex flex-col gap-4 min-h-0">
-          <div className="flex-[4] bg-slate-900/90 rounded-3xl border border-slate-700 p-6 flex flex-col min-h-0 shadow-inner">
+          <div className="flex-[5] bg-slate-700/90 rounded-3xl border border-slate-900 p-6 flex flex-col min-h-0 shadow-inner">
             <h3 className="text-[10px] font-bold text-slate-500 mb-4 uppercase flex items-center gap-2"><BarChart size={14} /> Output Visual</h3>
             <div className="flex-1">
               {chartData.length > 0 ? (
@@ -140,7 +140,7 @@ export default function Slide9({ onNext, onPrev, onHome }) {
             </div>
           </div>
           
-          <div className="flex-[2] bg-black rounded-3xl border border-slate-800 p-5 font-mono text-[10px] overflow-y-auto">
+          <div className="flex-[1.5] bg-black rounded-3xl border border-slate-800 p-5 font-mono text-[10px] overflow-y-auto">
              <div className="text-secondary font-bold mb-2 flex items-center gap-2"><CheckCircle2 size={12}/> KERNEL OUTPUT:</div>
              <div className="space-y-1">{logs.map((log, i) => <div key={i} className="text-slate-500">{log}</div>)}</div>
              {output && <pre className="mt-3 text-green-400 bg-green-900/10 p-2 rounded border border-green-800/30">{JSON.stringify(output, null, 2)}</pre>}

@@ -40,14 +40,14 @@ export default function Slide13({ onNext, onPrev, onHome }) {
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-5xl w-full flex flex-col items-center h-[85vh]">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-5xl w-full flex flex-col  items-center h-[85vh] ">
       
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold mb-2">Auditoría de <span className="text-orange-400">Sesgos</span></h2>
         <p className="text-slate-400 text-sm italic">"Los algoritmos no son neutrales, son opiniones encerradas en matemáticas."</p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8 w-full flex-1 min-h-0 items-center">
+      <div className="grid lg:grid-cols-2 gap-8 w-full flex-1 min-h-0 items-center overflow-y-auto custom-scrollbar">
         
         {/* LADO IZQUIERDO: EXPLICACIÓN CONCEPTUAL */}
         <div className="space-y-6">
@@ -113,10 +113,11 @@ export default function Slide13({ onNext, onPrev, onHome }) {
               </motion.div>
            </AnimatePresence>
         </div>
-
+        
       </div>
 
       <SlideNav onNext={onNext} onPrev={onPrev} onHome={onHome} />
+      
     </motion.div>
   );
 }

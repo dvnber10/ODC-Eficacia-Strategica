@@ -23,24 +23,24 @@ export default function Slide3({ onPrev, onHome, onSelectModule }) {
       animate={{ opacity: 1 }} 
       className="w-full max-w-5xl px-4"
     >
-      <div className="text-center mb-8">
-        <h2 className="text-4xl font-black tracking-tight">Ruta de Aprendizaje</h2>
-        <p className="text-slate-400 mt-2 italic">Selecciona un módulo para comenzar tu formación</p>
+      <div className="text-center mb-6 sm:mb-8">
+        <h2 className="text-3xl sm:text-4xl font-black tracking-tight">Ruta de Aprendizaje</h2>
+        <p className="text-slate-400 mt-2 italic text-sm sm:text-base">Selecciona un módulo para comenzar tu formación</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 mb-8">
         {modules.map((m) => (
           <motion.button
             key={m.id}
             whileHover={{ y: -5, backgroundColor: "rgba(30, 41, 59, 0.8)" }}
             whileTap={{ scale: 0.95 }}
             onClick={() => onSelectModule(m.id)}
-            className="p-6 bg-slate-800/40 border border-slate-700 rounded-2xl flex flex-col items-center text-center transition-all group shadow-lg"
+            className="p-4 sm:p-6 bg-slate-800/40 border border-slate-700 rounded-2xl flex flex-col items-center text-center transition-all group shadow-lg"
           >
-            <div className={`p-4 rounded-xl bg-slate-900 mb-4 group-hover:scale-110 transition-transform`}>
-              <m.icon className={m.color} size={28} />
+            <div className={`p-3 sm:p-4 rounded-xl bg-slate-900 mb-4 group-hover:scale-110 transition-transform`}>
+              <m.icon className={m.color} size={24} />
             </div>
-            <span className="text-sm font-bold text-slate-200 leading-tight">{m.title}</span>
+            <span className="text-xs sm:text-sm font-bold text-slate-200 leading-tight">{m.title}</span>
           </motion.button>
         ))}
       </div>

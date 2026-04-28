@@ -12,7 +12,7 @@ export default function Slide4({ onNext, onPrev, onHome }) {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-5xl w-full">
       <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold text-secondary">Módulo 1: El ADN de los Datos</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-secondary">Módulo 1: El ADN de los Datos</h2>
         <p className="text-slate-400">La evolución de la materia prima hacia la inteligencia de negocios.</p>
       </div>
 

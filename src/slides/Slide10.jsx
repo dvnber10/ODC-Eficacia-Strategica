@@ -40,7 +40,7 @@ export default function Slide10({ onNext, onPrev, onHome }) {
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-6xl w-full flex flex-col items-center h-[85vh]">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-6xl w-full flex flex-col items-center h-[75vh] overflow-y-auto custom-scrollbar">
       
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4 italic">Anticipando el <span className="text-accent">Futuro</span></h2>

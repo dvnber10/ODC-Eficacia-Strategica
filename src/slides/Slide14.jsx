@@ -54,7 +54,7 @@ export default function Slide14({ onNext, onPrev, onHome }) {
                 : 'bg-slate-900/40 border-slate-700 opacity-60'
               }`}
             >
-              <div className={`p-2 rounded-xl ${activeStory === i ? 'bg-purple-500 text-slate-900' : 'bg-slate-800 text-slate-400'}`}>
+              <div className={`p-2 rounded-xl ${activeStory === i ? 'bg-purple-500 text-slate-900 ' : 'bg-slate-800 text-slate-400 '}`}>
                 {s.icon}
               </div>
               <div className="overflow-hidden">
@@ -73,7 +73,7 @@ export default function Slide14({ onNext, onPrev, onHome }) {
         </div>
 
         {/* VISUALIZADOR DE STORYTELLING - Columna derecha */}
-        <div className="lg:col-span-8 bg-slate-900/60 border border-slate-700 rounded-[32px] p-6 relative overflow-hidden flex flex-col justify-center min-h-[300px]">
+        <div className="lg:col-span-8 bg-slate-900/60 border border-slate-700 rounded-[32px] p-6 relative flex flex-col justify-center min-h-[300px]">
           
           <AnimatePresence mode="wait">
             <motion.div
@@ -83,7 +83,7 @@ export default function Slide14({ onNext, onPrev, onHome }) {
               exit={{ opacity: 0, y: -10 }}
               className="space-y-6"
             >
-              <div className="relative pl-6">
+              <div className="relative pl-6 overflow-y-auto max-h-[150px]">
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-slate-700 rounded-full" />
                 <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">Lo que dice tu reporte:</span>
                 <p className="text-lg font-mono text-slate-400 mt-1">"{stories[activeStory].data}"</p>

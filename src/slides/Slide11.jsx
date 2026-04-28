@@ -104,18 +104,18 @@ export default function Slide11({ onNext, onPrev, onHome }) {
                 />
               </svg>
               <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <motion.span key={prediction} initial={{ scale: 0.9 }} animate={{ scale: 1 }} className="text-5xl font-black text-white">{prediction}%</motion.span>
-                <span className="text-[9px] uppercase tracking-[0.2em] text-slate-500 font-bold">Riesgo</span>
+                <motion.span key={prediction} initial={{ scale: 0.9 }} animate={{ scale: 1 }} className="text-3xl sm:text-5xl font-black text-white">{prediction}%</motion.span>
+                <span className="text-[10px] sm:text-[9px] uppercase tracking-[0.2em] text-slate-500 font-bold">Riesgo</span>
               </div>
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-3 w-full max-w-sm">
               <div className="bg-black/40 p-3 rounded-2xl border border-white/5 text-center">
-                <p className="text-[8px] text-slate-500 uppercase font-black mb-1">Ahorro Est.</p>
+                <p className="text-[9px] sm:text-[8px] text-slate-500 uppercase font-black mb-1">Ahorro Est.</p>
                 <p className="text-lg font-bold text-green-400">${Math.round(Math.max(0, 16.1 - prediction) * 12500).toLocaleString()}</p>
               </div>
               <div className="bg-black/40 p-3 rounded-2xl border border-white/5 text-center">
-                <p className="text-[8px] text-slate-500 uppercase font-black mb-1">Precisión IA</p>
+                <p className="text-[9px] sm:text-[8px] text-slate-500 uppercase font-black mb-1">Precisión IA</p>
                 <p className="text-lg font-bold text-blue-400">87.4%</p>
               </div>
             </div>
