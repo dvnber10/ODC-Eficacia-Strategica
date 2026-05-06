@@ -20,6 +20,8 @@ import Slide16 from './slides/Slide16';
 import Slide17 from './slides/Slide17';
 import Slide18 from './slides/Slide18';
 import Slide19 from './slides/Slide19';
+import Slide20 from './slides/Slide20';
+import Slide21 from './slides/Slide21';
 // Importación del Avatar
 import Avatar from './components/Avatar';
 
@@ -43,6 +45,7 @@ import audioS16 from './assets/audio/s16.mp3';
 import audioS17 from './assets/audio/s17.mp3';
 import audioS18 from './assets/audio/s18.mp3';
 import audioS19 from './assets/audio/s19.mp3';
+
 
 export default function App() {
   // Estado para controlar en qué slide estamos
@@ -199,7 +202,9 @@ export default function App() {
         {currentSlide === 16 && <Slide16 onNext={() => goTo(17)} onPrev={() => goTo(15)} onHome={() => goTo(3)} />}
         {currentSlide === 17 && <Slide17 onNext={() => goTo(18)} onPrev={() => goTo(16)} onHome={() => goTo(3)} />}
         {currentSlide === 18 && <Slide18 onNext={() => goTo(19)} onPrev={() => goTo(17)} onHome={() => goTo(3)} />}
-        {currentSlide === 19 && <Slide19 onNext={() => goTo(1)} onPrev={() => goTo(18)} onHome={() => goTo(3)} />}
+        {currentSlide === 19 && <Slide19 onNext={() => goTo(20)} onPrev={() => goTo(18)} onHome={() => goTo(3)} />}
+        {currentSlide === 20 && <Slide20 onNext={() => goTo(21)} onPrev={() => goTo(19)} onHome={() => goTo(3)} />}
+        {currentSlide === 21 && <Slide21 onNext={() => goTo(1)} onPrev={() => goTo(20)} onHome={() => goTo(3)} />}
       </main>
 
       {/* Indicador de progreso minimalista (opcional) */}

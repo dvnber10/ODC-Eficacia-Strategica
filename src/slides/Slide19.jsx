@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Globe, Sparkles, ArrowRight, GraduationCap, Users } from 'lucide-react';
+import { Sparkles, GraduationCap, Users } from 'lucide-react';
 import SlideNav from '../components/SlideNav';
 
 export default function Slide19({ onNext, onPrev, onHome }) {
@@ -8,54 +8,41 @@ export default function Slide19({ onNext, onPrev, onHome }) {
     <motion.div 
       initial={{ opacity: 0 }} 
       animate={{ opacity: 1 }} 
-      className="max-w-6xl w-full flex flex-col   items-center justify-center text-center relative overflow-hidden"
+      className="max-w-6xl w-full flex flex-col items-center justify-center text-center relative"
     >
-      {/* EFECTO DE FONDO SUTIL */}
-      <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
-      
       <motion.div 
         initial={{ y: 20, opacity: 0 }} 
         animate={{ y: 0, opacity: 1 }} 
-        transition={{ delay: 0.2 }}
         className="z-10"
       >
-        <div className="w-16 h-16 sm:w-24 sm:h-24 bg-white/5 rounded-[40px] flex items-center justify-center mb-6 sm:mb-8 mx-auto border border-white/10 shadow-2xl">
-          <Sparkles className="text-accent" size={48} />
+        <div className="w-20 h-20 bg-accent/10 rounded-[32px] flex items-center justify-center mb-8 mx-auto border border-accent/20 shadow-xl">
+          <Sparkles className="text-accent" size={40} />
         </div>
 
-        <h2 className="text-3xl sm:text-5xl font-black italic text-white mb-4 tracking-tighter">
+        <h2 className="text-4xl sm:text-6xl font-black italic text-white mb-6 tracking-tighter">
           ¡GRACIAS POR <span className="text-accent text-glow">REVOLUCIONAR</span> EL TALENTO!
         </h2>
 
-        {/* Agradecimientos y referencias cortas */}
-        <div className="flex flex-col sm:flex-wrap justify-center gap-2 sm:gap-4 max-w-full sm:max-w-4xl mx-auto mb-8 sm:mb-12">
-          <div className="px-4 py-2 sm:px-6 sm:py-4 bg-slate-900/40 border border-slate-800 rounded-2xl flex items-center gap-2 sm:gap-3">
-            <Users size={18} className="text-accent" />
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+          <div className="px-6 py-4 bg-slate-900/60 border border-slate-800 rounded-2xl flex items-center gap-3">
+            <Users size={20} className="text-accent" />
             <div className="text-left">
-              <p className="text-[11px] sm:text-[9px] font-black uppercase text-slate-500 tracking-widest">Instructores</p>
-              <p className="text-[10px] sm:text-[11px] text-white font-bold">Marcela Devia Barbosa</p>
+              <p className="text-[10px] font-black uppercase text-slate-500 tracking-widest">Instructora</p>
+              <p className="text-sm text-white font-bold">Marcela Devia Barbosa</p>
             </div>
           </div>
 
-          <div className="w-full max-w-full px-4 py-2 sm:px-6 sm:py-4 bg-slate-800/40 border border-slate-800 rounded-2xl flex items-start gap-2 sm:gap-3 max-w-xs sm:max-w-none min-w-0">
-            <Heart size={18} className="text-red-400" />
-            <div className="text-left min-w-0">
-              <p className="text-[11px] sm:text-[9px] font-black uppercase text-slate-500 tracking-widest">Referencias</p>
-              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">1. CerTIC. (s.f.). <em>Certificaciones Internacionales TIC</em>. https://www.youtube.com/watch?v=dHM-kuxz4w4</p>
-              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">2. IBM. (s.f.). <em>¿Qué es la procedencia de los datos?</em> Recuperado de https://www.ibm.com/mx-es/think/topics/data-provenance</p>
-              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">3. The Bridge. (s.f.). <em>Diferencias entre datos estructurados, no estructurados y semiestructurados</em>. Recuperado de https://thebridge.tech/blog/diferencias-entre-datos-estructurados-no-estructurados-y-semiestructurados/</p>
-              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">4. Mustafa Cagri. (s.f.). <em>Analítica de datos</em>. Mecalux. Recuperado de https://www.mecalux.com.ar/articulos-de-logistica/mustafa-cagri-analitica-datos-wms</p>
-              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">5. Ramírez, S. (s.f.). <em>Big Data: Preprocesamiento y calidad de datos</em>. Recuperado de http://150.214.190.154/sites/default/files/ficherosPublicaciones/2133_Nv237-Digital-sramirez.pdf</p>
-              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">6. Vincula Tégica. (s.f.). <em>La analítica de datos como ventaja competitiva en las organizaciones</em>. Recuperado de https://vinculategica.uanl.mx/index.php/v/article/view/520</p>
-              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">7. Anónimo. (s.f.). <em>Decisiones empresariales mediante la analítica de datos</em>. Recuperado de https://hdl.handle.net/1992/74868</p>
-              <p className="text-[10px] sm:text-[11px] text-white font-bold break-words">8. Recursos y estrategias para la enseñanza de la estadística y la analítica de datos. Recuperado de https://www.scielo.cl/scielo.php?pid=S0718-50062022000300061&script=sci_arttext</p>
+          <div className="px-6 py-4 bg-slate-900/60 border border-slate-800 rounded-2xl flex items-center gap-3">
+            <GraduationCap size={20} className="text-accent" />
+            <div className="text-left">
+              <p className="text-[10px] font-black uppercase text-slate-500 tracking-widest">Programa</p>
+              <p className="text-sm text-white font-bold">Especialización en Analítica y Ciencia de datos</p>
             </div>
-          </div>     
+          </div>
         </div>
       </motion.div>
 
-      {/* FOOTER DE NAVEGACIÓN */}
-      <SlideNav onNext={onNext} onPrev={onPrev} onHome={onHome} hideNext={true} />
+      <SlideNav onNext={onNext} onPrev={onPrev} onHome={onHome} />
     </motion.div>
   );
 }

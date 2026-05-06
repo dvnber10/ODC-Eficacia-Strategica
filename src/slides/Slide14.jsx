@@ -31,7 +31,7 @@ export default function Slide14({ onNext, onPrev, onHome }) {
   ];
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-6xl w-full flex flex-col h-[82vh] overflow-hidden">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="max-w-6xl w-full flex flex-col h-[100vh] overflow-hidden">
       
       {/* Header más pequeño */}
       <div className="text-center mb-6">
