@@ -21,7 +21,7 @@ const Slide2 = ({ onNext, onPrev, onHome }) => {
           </div>
           <h2 className="text-lg sm:text-xl font-bold mb-2 text-white">Resultado de Aprendizaje</h2>
           <p className="text-slate-400 text-[11px] sm:text-xs md:text-sm leading-relaxed">
-            Al finalizar, serás capaz de <span className="text-white font-medium">identificar patrones</span> y gestionar Big Data para optimizar la toma de decisiones estratégicas.
+            Al finalizar, serás capaz de <span className="text-white font-medium">identificar patrones</span> y gestionar Big Data para optimizar la toma de decisiones estratégicas en entornos empresariales, usando recursos como python o PowerBI para analizar los datos.
           </p>
         </motion.div>
 
@@ -37,7 +37,7 @@ const Slide2 = ({ onNext, onPrev, onHome }) => {
           </div>
           <h2 className="text-lg sm:text-xl font-bold mb-2 text-white">Población Objetivo</h2>
           <p className="text-slate-400 text-[11px] sm:text-xs md:text-sm leading-relaxed">
-            Diseñado para <span className="text-white font-medium">líderes y analistas</span> interesados en transformar datos históricos en ventajas competitivas sostenibles.
+            Diseñado para <span className="text-white font-medium">líderes, analistas y estudiantes</span> interesados en transformar datos históricos en ventajas competitivas sostenibles para desarrollar su pensamiento critico en entornos empresariales.
           </p>
         </motion.div>
 
@@ -53,7 +53,7 @@ const Slide2 = ({ onNext, onPrev, onHome }) => {
           </div>
           <h2 className="text-lg sm:text-xl font-bold mb-2 text-white">Metodología</h2>
           <p className="text-slate-400 text-[11px] sm:text-xs md:text-sm leading-relaxed">
-            Enfoque <span className="text-white font-medium">Learning by Doing</span>: Resolución de un caso real (TechNova Inc.) con laboratorios de Python y simulaciones.
+            Este recurso tiene un enfoque <span className="text-white font-medium">enseñanza por refuerzo</span>: con la presentacion de un caso real simulado y  con laboratorios de Python para desarrollar habilidades.
           </p>
         </motion.div>
 

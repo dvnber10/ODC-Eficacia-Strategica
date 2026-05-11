@@ -20,7 +20,7 @@ export default function Slide19({ onNext, onPrev, onHome }) {
         </div>
 
         <h2 className="text-4xl sm:text-6xl font-black italic text-white mb-6 tracking-tighter">
-          ¡GRACIAS POR <span className="text-accent text-glow">REVOLUCIONAR</span> EL TALENTO!
+          CONCLUSIONES 
         </h2>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
@@ -40,6 +40,15 @@ export default function Slide19({ onNext, onPrev, onHome }) {
             </div>
           </div>
         </div>
+        {/* campo para la conclusion */}
+        <motion.p
+          initial={{ y: 20, opacity: 0 }} 
+          animate={{ y: 0, opacity: 1 }} 
+          transition={{ delay: 0.3 }}
+          className="text-lg sm:text-xl text-slate-100 italic max-w-1xl mx-auto"
+        >
+          Al Desarollar este curso, se han presentado de forma sencilla el tratamiento de los datos a nivel empresarial, este recurso se presenta una alternativa de mejora e interactividad, la cual presente apoyo tanto a profesionales como estudiantes de analitica de datos, al desarrollarlo se exploran modulos que permiten al lector desarrollar sus capacidades en el desarrollo de competencias analiticas y presentaciones empresariales profundas.
+        </motion.p>
       </motion.div>
 
       <SlideNav onNext={onNext} onPrev={onPrev} onHome={onHome} />

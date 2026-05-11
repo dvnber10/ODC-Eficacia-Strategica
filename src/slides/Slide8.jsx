@@ -290,6 +290,10 @@ export default function Slide8({ onNext, onPrev, onHome }) {
           <p className="text-slate-300 text-sm leading-relaxed">
             Es la base de la inteligencia de negocios. Consiste en tomar datos históricos y resumirlos para identificar patrones. Sin entender el pasado, no podemos predecir el futuro.
           </p>
+          {/* link para recurso adicional para explicar la inteligencia de negocios */}
+          <a href="https://www.tableau.com/learn/articles/business-intelligence" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-4 text-sm text-secondary hover:underline">
+            Saber más sobre Inteligencia de Negocios →
+          </a>
         </div>
 
         <div className="bg-slate-800/50 p-8 rounded-3xl border border-slate-700">
@@ -298,6 +302,10 @@ export default function Slide8({ onNext, onPrev, onHome }) {
           <p className="text-slate-300 text-sm leading-relaxed">
             En el siguiente slide, actuarás como un analista de datos. Usarás un editor de código para filtrar un dataset real de Recursos Humanos y visualizar las razones por las cuales los empleados dejan la empresa.
           </p>
+          {/* link para recurso adicional para aprender power BI y python en analitica de datos */}
+          <a href="https://www.youtube.com/watch?v=ui-n9-d1hME" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-4 text-sm text-accent hover:underline">
+            Cursos recomendados para aprender Data Analytics →
+          </a>
         </div>
       </div>
 

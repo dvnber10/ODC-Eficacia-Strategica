@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { 
   Database, Zap, BarChart2, TrendingUp, 
-  Brain, Settings, Presentation, Award 
+  Brain, Settings, Presentation, Award, Sparkles, Users, GraduationCap, HelpCircle
 } from 'lucide-react';
 import SlideNav from '../components/SlideNav';
 
@@ -14,6 +14,10 @@ const modules = [
   { id: 15, title: "Taller Práctico", icon: Settings, color: "text-slate-300" },
   { id: 17, title: "Data Storytelling", icon: Presentation, color: "text-orange-400" },
   { id: 18, title: "Evaluación Final", icon: Award, color: "text-secondary" },
+  { id: 19, title: "Conclusiones", icon: Sparkles, color: "text-secondary" },
+  { id: 20, title: "Referencias", icon: Users, color: "text-secondary" },
+  { id: 21, title: "Creditos", icon: GraduationCap, color: "text-secondary" },
+  { id: 22, title: "Agradecimientos", icon: HelpCircle, color: "text-secondary" },
 ];
 
 export default function Slide3({ onPrev, onHome, onSelectModule }) {

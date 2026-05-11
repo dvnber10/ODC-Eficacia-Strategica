@@ -22,6 +22,7 @@ import Slide18 from './slides/Slide18';
 import Slide19 from './slides/Slide19';
 import Slide20 from './slides/Slide20';
 import Slide21 from './slides/Slide21';
+import Slide22 from './slides/Slide22';
 // Importación del Avatar
 import Avatar from './components/Avatar';
 
@@ -204,12 +205,13 @@ export default function App() {
         {currentSlide === 18 && <Slide18 onNext={() => goTo(19)} onPrev={() => goTo(17)} onHome={() => goTo(3)} />}
         {currentSlide === 19 && <Slide19 onNext={() => goTo(20)} onPrev={() => goTo(18)} onHome={() => goTo(3)} />}
         {currentSlide === 20 && <Slide20 onNext={() => goTo(21)} onPrev={() => goTo(19)} onHome={() => goTo(3)} />}
-        {currentSlide === 21 && <Slide21 onNext={() => goTo(1)} onPrev={() => goTo(20)} onHome={() => goTo(3)} />}
+        {currentSlide === 21 && <Slide21 onNext={() => goTo(22)} onPrev={() => goTo(20)} onHome={() => goTo(3)} />}
+        {currentSlide === 22 && <Slide22 onNext={() => goTo(1)} onPrev={() => goTo(21)} onHome={() => goTo(3)} />}
       </main>
 
       {/* Indicador de progreso minimalista (opcional) */}
       <div className="fixed top-4 left-4 flex gap-1 z-10">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map((num) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22].map((num) => (
           <div
             key={num}
             className={`h-1 w-8 rounded-full transition-all ${currentSlide === num ? 'bg-secondary w-12' : 'bg-slate-700'}`}
