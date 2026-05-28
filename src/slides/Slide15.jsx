@@ -8,7 +8,7 @@ export default function Slide15({ onNext, onPrev, onHome }) {
   const handleDownload = () => {
     // Ruta directa al archivo en tus assets
     const link = document.createElement("a");
-    link.href = "/src/assets/dataset/TechNova_Dataset.csv";
+    link.href = "/dataset/TechNova_Dataset.csv"; 
     link.download = "TechNova_Dataset.csv";
     document.body.appendChild(link);
     link.click();
